@@ -1,11 +1,10 @@
 body{
     margin: 0 auto;
     box-sizing: border-box;
-    width: 550px;
+    width: 50%;
     background-color: #2a2424;
-    
-
 }
+
 button{
     width: 123px;
     height: 42px;
@@ -20,6 +19,16 @@ button{
 button:hover{
     border: 2px solid green;
 }
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Bungee Spice', cursive;
+    margin-top: 1em;
+    font-size: 4rem;
+
+}
+
 #nav{
     display: flex;
     justify-content: space-evenly;
@@ -43,51 +52,38 @@ button:hover{
 } 
 
 .main{
-    height: 400px;
+    height: 600px;
     background-color: white;
-}
-#color1, 
-#color2,
-#color3,
-#color4,
-#color5{
-    width: 110px;
-    height: 400px;
-}
-
-#color1{
-    background-color: #00ffff;
-    
-
-}
-#color2{
-    background-color: #1fd947;
-}
-#color3{
-    background-color: #daa923;
-}
-#color4{
-    background-color: #bc1490;
-}
-#color5{
-    background-color: #9a0909;
-}
-
-.colors{
     display: flex;
     flex-direction: row;
+    column-gap: 1px;
+} 
+
+#main-text{
+    margin: 0 auto;
+    padding-top: 8em;
+    font-size: 1.4rem;
+    font-family: 'Bungee Spice', cursive;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-around;
+.mid-section{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    height: 1000px;
+}
+p{
+    font-family: inherit;
+    margin-top:6px;
+    font-size: small;
+    font-weight: 500;
+    }
+
+#text-color{
     background-color: white;
-    height: 46px;
-    margin: 0;
+    height: 10%;
+    padding-top: 1em;
+    font-weight: 600;
     font-size: 1rem;
-    color: #2B283A;
-
 }
-
-
 

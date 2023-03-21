@@ -4,47 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Teko&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Color Generator</title>
   </head>
   <body>
     <div class="container">
+      <h1>Color Picker</h1>
       <nav id="nav">
-        <input type="color" name="" id="color" />
+        <input type="color" value="#ff0000" name="color" id="colorpick" />
         <div>
           <select id="type">
-            <option>Monochrome</option>
-            <option>Monochrome-dark</option>
-            <option>Monochrome-light</option>
-            <option>Analogic</option>
-            <option>Complement</option>
-            <option>Analogic-complement</option>
-            <option>Triad</option>
+            <option disabled selected>Select scheme</option>
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome dark</option>
+            <option value="monochrome-light">Monochrome light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">quad</option>
           </select>
         </div>
-        <button>Get color scheme</button>
+        <button id="scheme-btn">Get color scheme</button>
       </nav>
       <div class="main">
-        <div class="colors">
-            <div id="color1"></div>
-            <div id="color2"></div>
-            <div id="color3"></div>
-            <div id="color4"></div>
-            <div id="color5"></div>
-        </div>
-        <footer class="footer">
-            <p>#00ffff</p>
-            <p>#1fd947</p>
-            <p>#daa923</p>
-            <p>#bc1490</p>
-            <p>#9a0909</p>
-        </footer>
+        <p id="main-text">Pick a color, select a scheme and click Get color button</p>
       </div>
     </div>
     <script src="main.js"></script>
